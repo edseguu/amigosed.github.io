@@ -1,0 +1,209 @@
+:root {
+    --fondo_pantalla: url(assets/tenor1.gif);
+    --boton_fondo: url(assets/patron_boton.avif);
+    --color-secondary: #fdfdfd;
+    --color-tertiary: #C4C4C4;
+    --color-text: #ffffff;
+    --color-white: #ffffff;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: var(--fondo_pantalla);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+
+  
+.main-title {
+    font-size: 80px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 5px 1px 2px rgb(67, 68, 68);
+    text-decoration-line:overline;
+    text-decoration-color: hsl(170, 94%, 79%);
+    color: var(--color-white);
+}
+
+.section-title {
+    font-size: 40px;
+    font-family: "VT323", monospace;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 8px 2px 10px rgb(0, 0, 0);
+    text-decoration-line: overline;
+    text-decoration-color: hsl(170, 94%, 79%);
+    color: var(--color-white);
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+
+
+}
+
+.input-name {
+    width: 100%;
+    padding: 9px;
+    background-image: url(assets/pixelart-background.avif);
+    background-position-x: -189px;
+    background-position-y: 340px;
+    background-size: 810px;
+    border: 7px solid hsl(170, 94%, 79%);
+    border-style: inset;
+    border-radius: 25px 0 0 25px;
+    font-size: 25px;
+    font-style:italic;
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ad3131;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(185, 61, 61, 0.3);
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #ffffff00;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: rgb(179, 228, 236);
+    color: black;
+    font-size: 19px;
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #87c8e2;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    background-color: rgba(15, 15, 15, 0.938);
+    margin-top: 25px;
+    color: #bdbaba;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/* Botón de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #ad3131;
+    background-size: 660px;
+    font-family: "VT323", monospace;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 50px;
+    color: #000000;
+    border: none;
+    
+}
+
+
+
+
+.button-draw:hover{
+    background-image: url(assets/fondo_boton_hover.gif);
+    transition: 0.4s;
+    transition-delay: 0.3s;
+    transition-timing-function: ease-out;
+    background-size: cover;
+    background-position: center;
+    background-position-x: -76px;
+    padding: 10px 125px;
+    color: black;
+}
+.button-reset {
+    background-color: #ff4d4d; /* Color de fondo rojo */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 100px; /* Espacio entre los botones */
+}
+
+.button-reset:hover {
+    background-color: #cc0000; /* Color de fondo más oscuro al pasar el mouse */
+}
